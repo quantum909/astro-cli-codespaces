@@ -1,5 +1,8 @@
 {
     "image": "mcr.microsoft.com/devcontainers/python:3.12",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+    },
     "postCreateCommand": "curl -sSL install.astronomer.io | sudo bash -s",
     "forwardPorts": [8080],
     "customizations": {
